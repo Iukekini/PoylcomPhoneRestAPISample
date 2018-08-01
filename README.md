@@ -27,8 +27,10 @@ go build
 
 ```bash
 ./PoylcomPhoneRestAPISample -ip=10.0.1.100 -username=Polycom -password=***
-INFO[07-31|23:13:30] Attempting to connect to phone via:      https://10.0.1.218/api/v1/mgmt/network/info=nil
+INFO[07-31|23:13:30] Attempting to connect to phone via:      https://10.0.1.100/api/v1/mgmt/network/info=nil
 INFO[07-31|23:13:31] Successfully called phone API
+```
+```json
 {
   "Status": "2000",
   "data": {
@@ -60,11 +62,6 @@ INFO[07-31|23:13:31] Successfully called phone API
     "ZTPStatus": "disabled"
   }
 ```
-
 ## Things to Note
 
-
  * Per the instrutions on the Polycom API Documention The sample disables checking any certificates. If your phones are loaded with a valid cert this won't be an issue. 
- *
- *
- *
