@@ -1,2 +1,3 @@
-# PoylcomPhoneRestAPISample
-Sample Go Application for the Rest API on Polycom Phones
+# Sample Application for Poylcom Phone API
+
+

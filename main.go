@@ -34,16 +34,21 @@ func main() {
 	}
 
 	switch *action {
-	case "networkinfo":
-		networkResponse := networkInfo(*ipaddress, *username, *password)
-		b, err := json.MarshalIndent(networkResponse, "", "  ")
-		if err != nil {
-			log.Error(err.Error())
-			os.Exit(1);
-		}
-		os.Stdout.Write(b)
-		break
+		case "networkinfo":
+			networkResponse := networkInfo(*ipaddress, *username, *password)
+			printObject(networkResponse)
+			break
 	}
+
+}
+
+func printObject(obj interface {}){
+	b, err := json.MarshalIndent(obj, "", "  ")
+	if err != nil {
+		log.Error(err.Error())
+		os.Exit(1);
+	}
+	os.Stdout.Write(b)
 
 }
 
@@ -65,6 +70,7 @@ func networkInfo(phoneIP string, username string, password string) NetworkInfoRe
 	return response
 
 }
+
 
 func basicAuth(username string, password string) string {
 	auth := username + ":" + password
