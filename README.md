@@ -8,7 +8,7 @@ https://community.polycom.com/t5/VoIP-SIP-Phones/FAQ-REST-API/td-p/98914
 
 Here's what you'll need to get started:
 
- * Polycom UC Softare 5.8.0 for any of the following VVX models: (101, 150, 201, 250, 300, 301, 310, 311, 350, 400, 401, 410, 411, 450, 500, 501, 600, 601 and 1500)
+ * Polycom UC Software 5.8.0 for any of the following VVX models: (101, 150, 201, 250, 300, 301, 310, 311, 350, 400, 401, 410, 411, 450, 500, 501, 600, 601 and 1500)
  * Rest Api Enabled in Preferences
  * Password changed from the default 456
  
