@@ -15,7 +15,6 @@ Here's what you'll need to get started:
  
 ## Build and Run Sample
 
-Replace the IPAddress with the IPAddress of the Phone you want to test with. 
 
 ```bash
 git clone https://github.com/Iukekini/PoylcomPhoneRestAPISample.git
